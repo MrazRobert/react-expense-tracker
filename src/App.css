@@ -1,38 +1,163 @@
-.App {
+body {
+  margin: 0px;
+}
+
+section {
+  margin: auto;
+  width: 60vw;
+}
+
+@media screen and (max-width: 1080px) {
+  section {
+    margin: auto;
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section {
+    margin: auto;
+    width: 90vw;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+h2 {
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.form div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 630px) {
+  .form div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.input {
+  width: 100vw;
+  margin: 0 auto;
+  align-content: stretch;
+}
+
+.form div {
+  margin: 5px;
+}
+
+label {
+  font-weight: bold;
+  margin: 5px;
+}
+
+.button-container {
+  margin: 5px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.alert-container {
+  padding-bottom: 8px;
+  height: 10px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.alert {
+  margin: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.alert-success {
+  color: green;
+  font-weight: bold;
+}
+
+.alert-danger {
+  color: red;
+  font-weight: bold;
+}
+
+.btn {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.932);
+  background-color: green;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 2px 2px 2px grey;
+}
+
+.btn:hover {
+  background-color: rgb(0, 87, 0);
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:active {
+  box-shadow: 0 0;
+  transform: translateY(1px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table {
+  margin: 0;
+  width: 98%;
+  margin: 5px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+table .btn {
+  padding: 0 3px;
+}
+
+table tr {
+  text-align: left;
+}
+
+table th {
+  min-width: 15px;
+  padding: 5px;
+  margin: 0;
+  border: 2px solid grey;
+}
+
+table td {
+  padding: 5px;
+  background-color: rgb(218, 216, 216);
+  border: 2px solid grey;
+}
+
+th:nth-child(4) {
+  width: 20px;
+}
+
+.td-button {
+  background-color: rgb(218, 216, 216);
+  padding: 0;
+}
+
+.base-row {
+  border-style: none;
 }
